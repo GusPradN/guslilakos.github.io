@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOST GUSLILA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6b4967c89c.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+   <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+               <ul>
+                   <li><a href="#interior">INTERIOR</a></li>
+                   <li><a href="#exterior">EXTERIOR</a></li>
+                   <li><a href="#contactus">CONTACT US</a></li>
+               </ul> 
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>KOST GUSLILA</h1>
+            <p>KOST GUSLILA ADALAH TEMPAT MENGINAP YANG STRATEGIS DENGAN HARGA TERJANGKAU.<br>
+                <br><br><i class="fas fa-map-marked-alt fa-4x"></i>
+            </p>
+            <a href="https://goo.gl/maps/mdLdkQ2qKbq36kRW6"
+            class="hero-btn">GO TO GOOGLE MAPS</a>
+        </div>
+   </section> 
+   <section class="interior" id="interior">
+    <h1>INTERIOR <br>KOST GUSLILA</h1>
+    <div class="row">
+        <div class="interior-col">
+            <img src="img/i1.png">
+            <div class="layer">
+                <h3>DEPAN KAMAR</h3>
+            </div>
+        </div>
+        <div class="interior-col">
+         <img src="img/i2.png">
+         <div class="layer">
+             <h3>HALAMAN DEPAN</h3>
+         </div>
+     </div>
+     <div class="interior-col">
+         <img src="img/i3.png">
+         <div class="layer">
+             <h3>HALAMAN DEPAN KOST</h3>
+         </div>
+    </div>
+   </section>
+   <section class="exterior" id="exterior">
+       <h1>EXTERIOR <br>KOST GUSLILA</h1>
+       <div class="row">
+           <div class="exterior-col">
+               <img src="img/e1.png">
+               <div class="layer">
+                   <h3>DEPAN KAMAR</h3>
+               </div>
+           </div>
+           <div class="exterior-col">
+            <img src="img/e2.png">
+            <div class="layer">
+                <h3>HALAMAN DEPAN</h3>
+            </div>
+        </div>
+        <div class="exterior-col">
+            <img src="img/e3.png">
+            <div class="layer">
+                <h3>HALAMAN DEPAN KOST</h3>
+            </div>
+        </div>
+       </div>
+   </section>
+   <section class="contactus" id="contactus">
+       <h1>CONTACT US</h1>
+       <div class="row pt-4">
+         <div class="col-md-4">
+            <i class="fab fa-whatsapp fa-5x fa-border-whatsapp"></i>
+                <h3 class="mt-3">WHATSAPP</h3>
+                <p class="contactus-text">BAPAK KOST : <a href="https://wa.me/6281337254101" 
+                class="hero-btn">+62 813-3725-4101</a>
+               <br>IBU KOST   : <a href="https://wa.me/6282235010504" class="hero-btn">+62 822-3501-0504</a></p>
+         </div>
+            <div class="col-md-4">
+                <i class="fab fa-line fa-5x fa-border-line"></i>
+                   <h3 class="mt-3">LINE</h3>
+                   <p  class="contactus-text">GusPrad : <a href="https://line.me/ti/p/HL8RNiTOji" class="hero-btn">gusdenyana1</a></p>
+         </div>
+         <div class="col-md-4">
+            <i class="fab fa-facebook-f fa-5x fa-border-facebook"></i>
+                <h3 class="mt-3">FACEBOOK</h3>
+                <p class="contactus-text">BAPAK KOST :
+                     <a href="https://www.facebook.com/idabagusmade.sulila" 
+                class="hero-btn">I.B Made Sulila</a>
+                <br>IBU KOST : <a href="https://www.facebook.com/dewi.kusumayati" class="hero-btn">Dewi Kusumayati</a></p>
+        </div>
+    </div>
+   </section>
+   <script>
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+   </script>
+</body>
+</html>
